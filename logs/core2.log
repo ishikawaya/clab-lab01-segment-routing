@@ -1,0 +1,78 @@
+2025/11/20 01:31:13 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/20 01:31:13 LDP: [G6NKK-8C6DV] end_config: VTY:0x76f95f807610, pending SET-CFG: 0
+2025/11/20 01:31:13 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/20 01:31:13 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x768282557050, pending SET-CFG: 0
+2025/11/20 01:31:13 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/20 01:31:13 BGP: [G6NKK-8C6DV] end_config: VTY:0x74898b11e0b0, pending SET-CFG: 0
+2025/11/20 01:31:13 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/20 01:31:13 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7572e72941b0, pending SET-CFG: 0
+2025/11/20 01:31:13 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/20 01:31:13 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7ab483a630c0, pending SET-CFG: 0
+2025/11/20 01:31:13 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/20 01:31:13 PATH: [G6NKK-8C6DV] end_config: VTY:0x7d13ac737190, pending SET-CFG: 0
+2025/11/20 01:31:13 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/20 01:31:13 OSPF: [G6NKK-8C6DV] end_config: VTY:0x76d2164d9080, pending SET-CFG: 0
+2025/11/20 01:31:13 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/20 01:31:13 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/20 01:38:17 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 1.0.0.1
+2025/11/20 01:38:17 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 2.2.2.2
+2025/11/20 01:38:18 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/20 01:38:18 ZEBRA: [V98V0-MTWPF] client 91 says hello and bids fair to announce only isis routes vrf=0
+2025/11/20 01:38:18 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/20 01:38:19 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0001 (eth1) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/20 01:38:19 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/20 01:38:19 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=58, pid=2787057222
+2025/11/20 01:38:19 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/20 01:38:19 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0001 (eth1) for level-2 changed from Initializing to Up, unspecified
+2025/11/20 01:38:48 ISIS: [RTH7Q-JK1GQ][EC 67108868] ISIS-Sr (fabric): collision detected, prefixes 1.1.1.1/32 and 2.2.2.2/32 share the same SID index (10)
+2025/11/20 01:40:13 ISIS: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffd21043e38 arg=0x7572e7277040 ready               lsp_tick() &area->t_tick from isisd/isis_lsp.c:2160} getting executed 4536ms late, warning threshold 4000ms. System load: 0.00, 0.04, 0.07
+2025/11/20 01:45:39 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:45:39 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:45:42 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:45:42 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:45:46 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:45:46 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:45:55 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:45:55 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:46:12 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:46:12 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:46:36 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:46:36 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:46:38 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:46:38 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:46:43 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:46:43 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:46:46 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:46:46 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:46:52 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:46:52 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:47:08 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:47:08 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:47:42 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:47:42 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:47:50 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:47:50 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:48:45 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffd8312cf88 arg=0x77fc6cc45910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 6832ms late, warning threshold 4000ms. System load: 0.15, 0.09, 0.07
+2025/11/20 01:48:46 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:48:46 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:49:51 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:49:51 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:50:46 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:50:46 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:51:17 LDP: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7fff6f5eca38 arg=0x0 ready               lde_gc_timer() &gc_timer from ldpd/lde_lib.c:1053} getting executed 4112ms late, warning threshold 4000ms. System load: 0.25, 0.12, 0.09
+2025/11/20 01:51:19 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffd8312cf88 arg=0x77fc6cc45910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 8309ms late, warning threshold 4000ms. System load: 0.25, 0.12, 0.09
+2025/11/20 01:51:51 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:51:51 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:52:39 ISIS: [RTH7Q-JK1GQ][EC 67108868] ISIS-Sr (fabric): collision detected, prefixes 1.1.1.1/32 and 2.2.2.2/32 share the same SID index (10)
+2025/11/20 01:52:46 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:52:46 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:53:01 ISIS: [RTH7Q-JK1GQ][EC 67108868] ISIS-Sr (fabric): collision detected, prefixes 1.1.1.1/32 and 2.2.2.2/32 share the same SID index (10)
+2025/11/20 01:53:42 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffd8312cf88 arg=0x77fc6cc45910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 4063ms late, warning threshold 4000ms. System load: 0.06, 0.08, 0.08
+2025/11/20 01:53:52 BGP: [VHWDJ-C5186][EC 33554453] 1.1.1.1: No local IPv6 address, and zebra does not support V6 routing with v4 nexthops, BGP routing for V6 will not work
+2025/11/20 01:53:52 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 1.1.1.1
+2025/11/20 01:53:52 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 20, bytesread -1, recvfrom(): Network is down
+2025/11/20 01:53:52 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 26, packet type 0
+2025/11/20 01:53:52 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2025/11/20 01:53:52 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to core1 (eth1) for level-2 changed from Up to Down, circuit is being brought down
+2025/11/20 01:53:52 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: No such device or address
+2025/11/20 01:53:52 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (fabric): Send L2 IIH on eth1 failed

@@ -1,0 +1,41 @@
+---
+core1:
+    username: admin
+    password: admin
+    platform: arista_ceos
+    hostname: 172.20.20.2
+core2:
+    username: admin
+    password: admin
+    platform: arista_ceos
+    hostname: 172.20.20.9
+node1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.8
+node2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.3
+pe1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.7
+pe2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.5
+pe3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.6
+pe4:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.4

@@ -1,0 +1,80 @@
+name: lab01
+
+topology:
+  defaults:
+    kind: linux
+    image: quay.io/frrouting/frr:10.5.0
+    binds:
+      - ./params/daemons:/etc/frr/daemons
+      - ./params/vtysh.conf:/etc/frr/vtysh.conf
+    exec:
+      - ip link add mgmt type vrf table 90
+      - ip link set dev mgmt up
+      - ip link set dev eth0 master mgmt
+      - ip link add red type vrf table 20
+      - ip link set dev red up
+      - ip link set dev eth3 master red
+      - ip link add sr0 type dummy
+      - ip link set dev sr0 up
+      - ip link add lo20 type dummy
+      - ip link set dev lo20 up
+      - ip link set dev lo20 master red
+      - sysctl -w net.ipv6.conf.eth2.seg6_enabled=1
+      - sysctl -w net.vrf.strict_mode=1
+      - sysctl -w net.ipv6.conf.all.seg6_enabled=1
+      - sysctl -w net.ipv6.conf.default.seg6_enabled=1
+      - sysctl -w net.ipv6.conf.all.forwarding=1
+
+  nodes:
+    core1:
+      kind: arista_ceos
+      image: ceos:4.35.0f
+    core2:
+      kind: arista_ceos
+      image: ceos:4.35.0f
+    pe1:
+      binds:
+        - ./confs/pe1.conf:/etc/frr/frr.conf
+        - ./logs/pe1.log:/var/log/frr.log
+    pe2:
+      binds:
+        - ./confs/pe2.conf:/etc/frr/frr.conf
+        - ./logs/pe2.log:/var/log/frr.log
+    pe3:
+      binds:
+        - ./confs/pe3.conf:/etc/frr/frr.conf
+        - ./logs/pe3.log:/var/log/frr.log
+    pe4:
+      binds:
+        - ./confs/pe4.conf:/etc/frr/frr.conf
+        - ./logs/pe4.log:/var/log/frr.log
+    node1:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 3.0.0.1/31 dev eth1
+        - ip addr add 3.0.0.3/31 dev eth2
+        - ip route add default via 3.0.0.0 dev eth1 metric 10
+        - ip route add default via 3.0.0.2 dev eth2 metric 20
+        - ip addr add 100.0.0.0/32 dev lo
+    node2:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 4.0.0.1/31 dev eth1
+        - ip addr add 4.0.0.3/31 dev eth2
+        - ip route add default via 4.0.0.0 dev eth1 metric 10
+        - ip route add default via 4.0.0.2 dev eth2 metric 20
+        - ip addr add 200.0.0.0/32 dev lo
+  links:
+    - endpoints: ["node1:eth1", "pe1:eth3"]
+    - endpoints: ["node1:eth2", "pe2:eth3"]
+    - endpoints: ["pe1:eth2", "pe2:eth2"]
+    - endpoints: ["pe1:eth1", "core1:eth2"]
+    - endpoints: ["pe2:eth1", "core1:eth3"]
+    - endpoints: ["node2:eth1", "pe3:eth3"]
+    - endpoints: ["node2:eth2", "pe4:eth3"]
+    - endpoints: ["pe3:eth2", "pe4:eth2"]
+    - endpoints: ["pe3:eth1", "core2:eth2"]
+    - endpoints: ["pe4:eth1", "core2:eth3"]
+    - endpoints: ["core1:eth1", "core2:eth1"]

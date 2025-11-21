@@ -1,0 +1,708 @@
+2025/11/21 04:13:34 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:13:34 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x74c8c206c050, pending SET-CFG: 0
+2025/11/21 04:13:34 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:13:34 LDP: [G6NKK-8C6DV] end_config: VTY:0x7c8c356a7610, pending SET-CFG: 0
+2025/11/21 04:13:34 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:13:34 BGP: [G6NKK-8C6DV] end_config: VTY:0x73978c3bf0b0, pending SET-CFG: 0
+2025/11/21 04:13:34 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:13:34 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7a110eb041b0, pending SET-CFG: 0
+2025/11/21 04:13:34 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:13:34 STATIC: [G6NKK-8C6DV] end_config: VTY:0x766319de10c0, pending SET-CFG: 0
+2025/11/21 04:13:34 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:13:34 OSPF: [G6NKK-8C6DV] end_config: VTY:0x756031c04070, pending SET-CFG: 0
+2025/11/21 04:13:34 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:13:34 PATH: [G6NKK-8C6DV] end_config: VTY:0x7cfcdb673190, pending SET-CFG: 0
+2025/11/21 04:13:34 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/21 04:13:34 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/21 04:13:35 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/21 04:14:30 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 2000::a8c1:abff:fe1e:785d
+2025/11/21 04:17:15 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: ::
+2025/11/21 04:17:44 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:17:44 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x7cc9941f0050, pending SET-CFG: 0
+2025/11/21 04:17:44 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:17:44 OSPF: [G6NKK-8C6DV] end_config: VTY:0x78f2fb42e070, pending SET-CFG: 0
+2025/11/21 04:17:44 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:17:44 BGP: [G6NKK-8C6DV] end_config: VTY:0x7dec7b90d0b0, pending SET-CFG: 0
+2025/11/21 04:17:44 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:17:44 LDP: [G6NKK-8C6DV] end_config: VTY:0x7f7f4f74f610, pending SET-CFG: 0
+2025/11/21 04:17:44 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:17:44 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7300eb0ef1b0, pending SET-CFG: 0
+2025/11/21 04:17:44 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:17:44 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7076a3c530c0, pending SET-CFG: 0
+2025/11/21 04:17:44 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:17:44 PATH: [G6NKK-8C6DV] end_config: VTY:0x7eff48820190, pending SET-CFG: 0
+2025/11/21 04:17:44 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/21 04:17:44 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/21 04:17:44 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/21 04:18:37 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 2000::a8c1:abff:fea6:46d3
+2025/11/21 04:26:09 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 5.5.5.5
+2025/11/21 04:27:28 ISIS: [P25DQ-BN2WF][EC 100663325] nb_candidate_edit_config_change: unknown data path: /frr-isisd:isis/instance[area-tag='srv6'][vrf='default']/area-address[.='49.0001.0000.0000.00001.00']
+2025/11/21 04:27:43 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/21 04:27:43 ZEBRA: [V98V0-MTWPF] client 91 says hello and bids fair to announce only isis routes vrf=0
+2025/11/21 04:27:43 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/21 04:28:03 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 2000::1 in vrf default
+2025/11/21 04:28:43 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/21 04:34:54 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/21 04:38:41 ZEBRA: [HSYZM-HV7HF] Extended Error: Strict mode for VRF is disabled
+2025/11/21 04:38:41 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Operation not permitted, type=RTM_NEWNEXTHOP(104), seq=91, pid=2891163531
+2025/11/21 04:38:41 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/21 04:38:41 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=92, pid=2891163531
+2025/11/21 04:38:41 ZEBRA: [X5XE1-RS0SW][EC 4043309074] Failed to install Nexthop (44[if 3 vrfid 0]) into the kernel
+2025/11/21 04:38:41 ZEBRA: [VYKYC-709DP] default(0:254):5:5:5:1::/128: Route install failed
+2025/11/21 04:42:21 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 2000::2
+2025/11/21 04:42:21 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5:5::
+2025/11/21 04:42:21 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:2001::/64: Failed to enqueue dataplane install
+2025/11/21 04:42:21 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:22:22:22:22::/128: Failed to enqueue dataplane install
+2025/11/21 04:42:21 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:1000::/64: Failed to enqueue dataplane install
+2025/11/21 04:42:21 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:11:11:11:11::/128: Failed to enqueue dataplane install
+2025/11/21 04:44:10 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:44:10 LDP: [G6NKK-8C6DV] end_config: VTY:0x76a9345ce610, pending SET-CFG: 0
+2025/11/21 04:44:10 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:44:10 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x7a7dd9f21050, pending SET-CFG: 0
+2025/11/21 04:44:10 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:44:10 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7b0bec6cc1b0, pending SET-CFG: 0
+2025/11/21 04:44:10 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:44:10 BGP: [G6NKK-8C6DV] end_config: VTY:0x7d1cd41cf0b0, pending SET-CFG: 0
+2025/11/21 04:44:10 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:44:10 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7840174f80c0, pending SET-CFG: 0
+2025/11/21 04:44:10 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:44:10 PATH: [G6NKK-8C6DV] end_config: VTY:0x71b126a69190, pending SET-CFG: 0
+2025/11/21 04:44:10 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/21 04:44:10 OSPF: [G6NKK-8C6DV] end_config: VTY:0x7fd9d9eeb070, pending SET-CFG: 0
+2025/11/21 04:44:10 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/21 04:44:10 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/21 04:44:11 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/21 04:47:33 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 5.5.5.5
+2025/11/21 04:47:33 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5:5::
+2025/11/21 04:47:33 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/21 04:47:33 ZEBRA: [V98V0-MTWPF] client 90 says hello and bids fair to announce only isis routes vrf=0
+2025/11/21 04:47:33 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/21 04:47:33 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/21 04:47:33 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/21 04:47:34 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 2000::2
+2025/11/21 04:47:35 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 4000::1
+2025/11/21 04:49:04 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 2000::1 in vrf default
+2025/11/21 04:57:16 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:16 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 1 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 1 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:19 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:19 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 2 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 2 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:22 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:22 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 3 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 3 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:25 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:25 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 4 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 4 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:28 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:28 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 5 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 5 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:31 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:31 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 6 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 6 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:34 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:34 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 7 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 7 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:37 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:37 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 8 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 8 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:40 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:40 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 9 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 9 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:43 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:43 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 10 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 10 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:45 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:45 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 11 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 11 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:48 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:48 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 12 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 12 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:51 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:51 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 13 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 13 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:54 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:54 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 14 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 14 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:57:57 ISIS: [RYS4A-ANPBK] ISIS-Adj (srv6): Received IIH with own sysid on eth2 - discard
+2025/11/21 04:57:57 ISIS: [VAS9N-1JNNR] PDU drop detected of type: P2P IIH. 15 Total Drops; 0 L1 IIH drops;  0 L2 IIH drops; 15 P2P IIH drops; 0 L1 LSP drops; 0 L2 LSP drops; 0 FS LSP drops; 0 L1 CSNP drops; 0 L2 CSNP drops; 0 L1 PSNP drops; 0 L2 PSNP drops.
+2025/11/21 04:58:04 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/21 04:58:04 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/21 04:58:04 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=94, pid=4143366813
+2025/11/21 04:58:04 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/21 04:58:04 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Initializing to Up, unspecified
+2025/11/21 04:59:52 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/21 05:04:21 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/21 05:04:35 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/21 05:04:35 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/21 05:09:02 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 6:6:6::6
+2025/11/21 05:09:03 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/21 05:09:03 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/21 05:09:13 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 6:6:6::6
+2025/11/21 05:09:14 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/21 05:09:14 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/21 06:13:14 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 4:4:4::4 in vrf default
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:4:4:4::/48: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3:3:3::/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3:3:3:2::/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:11:11:11:11::/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:1000::/64: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:1001::/64: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3000::/64: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:4:4:4::/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:4:4:4:2::/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:4:4:4::4/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3:3:3::3/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3:3:3::/48: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:22:22:22:22::/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/21 14:01:36 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=412, pid=4143366813
+2025/11/21 14:01:36 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/21 14:01:36 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/21 14:01:36 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Up to Down, circuit is being brought down
+2025/11/21 14:01:36 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: No such device or address
+2025/11/21 14:01:36 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (srv6): Send L2 IIH on eth2 failed
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:6:6:6:2::/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:6:6:6::/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:5:5:5::/48: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:2001::/64: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:6:6:6::6/128: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:6:6:6::/48: Failed to enqueue dataplane install
+2025/11/21 14:01:36 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:5:5:5:2::/128: Failed to enqueue dataplane install
+2025/11/22 22:10:38 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/22 22:10:38 OSPF: [G6NKK-8C6DV] end_config: VTY:0x733c36ca7070, pending SET-CFG: 0
+2025/11/22 22:10:38 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/22 22:10:38 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x77ac30f0f580, pending SET-CFG: 0
+2025/11/22 22:10:38 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/22 22:10:38 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x727d9c54f050, pending SET-CFG: 0
+2025/11/22 22:10:38 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/22 22:10:38 LDP: [G6NKK-8C6DV] end_config: VTY:0x73e8feeb9610, pending SET-CFG: 0
+2025/11/22 22:10:38 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/22 22:10:38 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f1be2ed80b0, pending SET-CFG: 0
+2025/11/22 22:10:38 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/22 22:10:38 STATIC: [G6NKK-8C6DV] end_config: VTY:0x748f00a560c0, pending SET-CFG: 0
+2025/11/22 22:10:38 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/22 22:10:38 PATH: [G6NKK-8C6DV] end_config: VTY:0x70cac4e26190, pending SET-CFG: 0
+2025/11/22 22:10:38 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/22 22:10:38 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/22 22:10:38 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/22 22:10:38 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only isis routes vrf=0
+2025/11/22 22:10:38 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/22 22:10:38 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/22 22:10:38 ZEBRA: [V98V0-MTWPF] client 89 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/22 22:10:38 ZEBRA: [HSYZM-HV7HF] Extended Error: Strict mode for VRF is disabled
+2025/11/22 22:10:38 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Operation not permitted, type=RTM_NEWNEXTHOP(104), seq=59, pid=3140264782
+2025/11/22 22:10:38 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/22 22:10:38 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=60, pid=3140264782
+2025/11/22 22:10:38 ZEBRA: [X5XE1-RS0SW][EC 4043309074] Failed to install Nexthop (19[if 3 vrfid 0]) into the kernel
+2025/11/22 22:10:38 ZEBRA: [VYKYC-709DP] default(0:254):5:5:5:1::/128: Route install failed
+2025/11/22 22:10:38 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/22 22:10:38 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7104fb7531b0, pending SET-CFG: 0
+2025/11/22 22:10:38 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/22 22:10:39 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/22 22:10:39 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 2000::2
+2025/11/22 22:10:40 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 4000::1
+2025/11/22 22:10:40 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/22 22:10:40 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/22 22:10:40 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=91, pid=3140264782
+2025/11/22 22:10:40 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/22 22:10:41 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Initializing to Up, unspecified
+2025/11/22 22:11:08 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 6:6:6::6
+2025/11/22 22:11:10 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/22 22:11:10 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/22 22:11:49 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 2000::1 in vrf default
+2025/11/22 22:11:52 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 4:4:4::4 in vrf default
+2025/11/23 23:23:20 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2025/11/23 23:23:20 LDP: [G6NKK-8C6DV] end_config: VTY:0x7f2b68c17610, pending SET-CFG: 0
+2025/11/23 23:23:20 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2025/11/23 23:23:20 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x74b585859050, pending SET-CFG: 0
+2025/11/23 23:23:20 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2025/11/23 23:23:20 OSPF: [G6NKK-8C6DV] end_config: VTY:0x7aa0b0c38060, pending SET-CFG: 0
+2025/11/23 23:23:20 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/23 23:23:20 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:23:20 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only isis routes vrf=0
+2025/11/23 23:23:20 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/23 23:23:20 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:23:20 PATH: [G6NKK-8C6DV] end_config: VTY:0x77f16d5aa180, pending SET-CFG: 0
+2025/11/23 23:23:20 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2025/11/23 23:23:20 BGP: [G6NKK-8C6DV] end_config: VTY:0x71713e4190b0, pending SET-CFG: 0
+2025/11/23 23:23:20 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 5.5.5.5
+2025/11/23 23:23:20 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2025/11/23 23:23:20 ISIS: [G6NKK-8C6DV] end_config: VTY:0x742a1fd621b0, pending SET-CFG: 0
+2025/11/23 23:23:20 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:23:20 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/23 23:23:20 ZEBRA: [V98V0-MTWPF] client 89 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/23 23:23:22 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 3fff:172:20:20:42:acff:fe14:1406
+2025/11/23 23:28:43 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:28:43 PATH: [G6NKK-8C6DV] end_config: VTY:0x7b12c1ca7180, pending SET-CFG: 0
+2025/11/23 23:28:43 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:28:43 OSPF: [G6NKK-8C6DV] end_config: VTY:0x737fedbef060, pending SET-CFG: 0
+2025/11/23 23:28:43 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:28:43 LDP: [G6NKK-8C6DV] end_config: VTY:0x764cf3c56610, pending SET-CFG: 0
+2025/11/23 23:28:43 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:28:43 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x7bfb7cdf4050, pending SET-CFG: 0
+2025/11/23 23:28:43 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/23 23:28:43 ZEBRA: [V98V0-MTWPF] client 89 says hello and bids fair to announce only isis routes vrf=0
+2025/11/23 23:28:43 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/23 23:28:43 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:28:43 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:28:43 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fde11d900b0, pending SET-CFG: 0
+2025/11/23 23:28:43 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 5.5.5.5
+2025/11/23 23:28:43 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:28:43 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fc255f7d1b0, pending SET-CFG: 0
+2025/11/23 23:28:43 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:28:46 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 3fff:172:20:20:42:acff:fe14:1402
+2025/11/23 23:32:44 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2025/11/23 23:32:44 LDP: [G6NKK-8C6DV] end_config: VTY:0x784517d1e610, pending SET-CFG: 0
+2025/11/23 23:32:44 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2025/11/23 23:32:44 OSPF: [G6NKK-8C6DV] end_config: VTY:0x7bd6b4ec0070, pending SET-CFG: 0
+2025/11/23 23:32:44 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2025/11/23 23:32:44 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x72c8ad4c6050, pending SET-CFG: 0
+2025/11/23 23:32:44 OSPF6: [GZ318-0J443] Zebra: got delete of eth3, but interface is still up
+2025/11/23 23:32:44 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:32:44 PATH: [G6NKK-8C6DV] end_config: VTY:0x76fe28296190, pending SET-CFG: 0
+2025/11/23 23:32:44 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 5.5.5.5
+2025/11/23 23:32:44 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:32:44 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/23 23:32:44 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2025/11/23 23:32:44 BGP: [G6NKK-8C6DV] end_config: VTY:0x70117bf090b0, pending SET-CFG: 0
+2025/11/23 23:32:44 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only isis routes vrf=0
+2025/11/23 23:32:44 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/23 23:32:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Strict mode for VRF is disabled
+2025/11/23 23:32:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Operation not permitted, type=RTM_NEWNEXTHOP(104), seq=69, pid=3244493443
+2025/11/23 23:32:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/23 23:32:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=70, pid=3244493443
+2025/11/23 23:32:44 ZEBRA: [X5XE1-RS0SW][EC 4043309074] Failed to install Nexthop (18[if 3 vrfid 0]) into the kernel
+2025/11/23 23:32:44 ZEBRA: [VYKYC-709DP] default(0:254):5:5:5:1::/128: Route install failed
+2025/11/23 23:32:44 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:32:44 ISIS: [G6NKK-8C6DV] end_config: VTY:0x797d31b241b0, pending SET-CFG: 0
+2025/11/23 23:32:44 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:32:44 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/23 23:32:45 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/23 23:32:45 ZEBRA: [V98V0-MTWPF] client 89 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/23 23:32:45 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/23 23:32:46 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 4000::1
+2025/11/23 23:32:47 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/23 23:32:47 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/23 23:32:47 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=107, pid=3244493443
+2025/11/23 23:32:47 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/23 23:32:47 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Initializing to Up, unspecified
+2025/11/23 23:33:16 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/23 23:33:16 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/23 23:33:40 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 2000::1 in vrf default
+2025/11/23 23:33:49 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 4:4:4::4
+2025/11/23 23:33:51 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 4:4:4::4 in vrf default
+2025/11/23 23:42:35 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 18, bytesread -1, recvfrom(): Network is down
+2025/11/23 23:42:35 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 55, packet type 0
+2025/11/23 23:42:35 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2025/11/23 23:42:35 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Up to Down, circuit is being brought down
+2025/11/23 23:42:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2025/11/23 23:42:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (srv6): Send L2 IIH on eth2 failed
+2025/11/23 23:42:35 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/23 23:42:35 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:2001::/64: Failed to enqueue dataplane install
+2025/11/23 23:42:35 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:6:6:6:2::/128: Failed to enqueue dataplane install
+2025/11/23 23:42:35 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:6:6:6::/128: Failed to enqueue dataplane install
+2025/11/23 23:42:35 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:5:5:5::/48: Failed to enqueue dataplane install
+2025/11/23 23:42:35 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:6:6:6::6/128: Failed to enqueue dataplane install
+2025/11/23 23:42:35 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:6:6:6::/48: Failed to enqueue dataplane install
+2025/11/23 23:42:35 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:5:5:5:2::/128: Failed to enqueue dataplane install
+2025/11/23 23:44:07 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:44:07 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x7d74e1fb7050, pending SET-CFG: 0
+2025/11/23 23:44:07 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:44:07 LDP: [G6NKK-8C6DV] end_config: VTY:0x708c011f1610, pending SET-CFG: 0
+2025/11/23 23:44:07 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:44:07 OSPF: [G6NKK-8C6DV] end_config: VTY:0x72d110061070, pending SET-CFG: 0
+2025/11/23 23:44:07 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:44:07 PATH: [G6NKK-8C6DV] end_config: VTY:0x751fbcaa8190, pending SET-CFG: 0
+2025/11/23 23:44:07 OSPF6: [GZ318-0J443] Zebra: got delete of eth3, but interface is still up
+2025/11/23 23:44:07 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 18, bytesread -1, recvfrom(): Network is down
+2025/11/23 23:44:07 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 95, packet type 0
+2025/11/23 23:44:07 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2025/11/23 23:44:07 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 5.5.5.5
+2025/11/23 23:44:07 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:44:07 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:44:07 BGP: [G6NKK-8C6DV] end_config: VTY:0x730e7f9080b0, pending SET-CFG: 0
+2025/11/23 23:44:07 ZEBRA: [HSYZM-HV7HF] Extended Error: Strict mode for VRF is disabled
+2025/11/23 23:44:07 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Operation not permitted, type=RTM_NEWNEXTHOP(104), seq=44, pid=2573264230
+2025/11/23 23:44:07 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/23 23:44:07 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=45, pid=2573264230
+2025/11/23 23:44:07 ZEBRA: [X5XE1-RS0SW][EC 4043309074] Failed to install Nexthop (14[if 3 vrfid 0]) into the kernel
+2025/11/23 23:44:07 ZEBRA: [VYKYC-709DP] default(0:254):5:5:5:1::/128: Route install failed
+2025/11/23 23:44:07 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:44:07 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x72339ebb85e0, pending SET-CFG: 0
+2025/11/23 23:44:07 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:44:07 ISIS: [G6NKK-8C6DV] end_config: VTY:0x70717c50d1b0, pending SET-CFG: 0
+2025/11/23 23:44:07 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2025/11/23 23:44:07 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (srv6): Send L2 IIH on eth2 failed
+2025/11/23 23:44:07 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:44:07 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:44:07 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/23 23:44:07 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/23 23:44:07 ZEBRA: [V98V0-MTWPF] client 89 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/23 23:44:07 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/23 23:49:29 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 2000::2
+2025/11/23 23:49:29 BGP: [J9K4Q-T8STY][EC 33554466] 2000::1 [FSM] Failure handling event BGP_Start in state Idle, prior events BGP_Stop, BGP_Stop, fd -1, last reset: Admin. shutdown
+2025/11/23 23:49:38 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 4000::1
+2025/11/23 23:49:49 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/23 23:50:25 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:50:25 OSPF: [G6NKK-8C6DV] end_config: VTY:0x73718ae2d070, pending SET-CFG: 0
+2025/11/23 23:50:25 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:50:25 LDP: [G6NKK-8C6DV] end_config: VTY:0x7daa14ac9610, pending SET-CFG: 0
+2025/11/23 23:50:25 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:50:25 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:50:25 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:50:25 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x7615f383c050, pending SET-CFG: 0
+2025/11/23 23:50:25 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:50:25 BGP: [G6NKK-8C6DV] end_config: VTY:0x7a3636ccf0b0, pending SET-CFG: 0
+2025/11/23 23:50:25 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 5.5.5.5
+2025/11/23 23:50:25 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/23 23:50:25 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:50:25 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x71c9904dd670, pending SET-CFG: 0
+2025/11/23 23:50:25 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:50:25 PATH: [G6NKK-8C6DV] end_config: VTY:0x755359776190, pending SET-CFG: 0
+2025/11/23 23:50:25 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/23 23:50:25 ZEBRA: [HSYZM-HV7HF] Extended Error: Strict mode for VRF is disabled
+2025/11/23 23:50:25 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Operation not permitted, type=RTM_NEWNEXTHOP(104), seq=55, pid=3966412890
+2025/11/23 23:50:25 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/23 23:50:25 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=56, pid=3966412890
+2025/11/23 23:50:25 ZEBRA: [X5XE1-RS0SW][EC 4043309074] Failed to install Nexthop (19[if 3 vrfid 0]) into the kernel
+2025/11/23 23:50:25 ZEBRA: [VYKYC-709DP] default(0:254):5:5:5:1::/128: Route install failed
+2025/11/23 23:50:25 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only isis routes vrf=0
+2025/11/23 23:50:25 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/23 23:50:25 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/23 23:50:25 ISIS: [G6NKK-8C6DV] end_config: VTY:0x76fb4023c1b0, pending SET-CFG: 0
+2025/11/23 23:50:25 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:50:25 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/23 23:50:25 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/23 23:50:25 ZEBRA: [V98V0-MTWPF] client 89 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/23 23:50:25 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/23 23:50:26 BGP: [J9K4Q-T8STY][EC 33554466] 2000::1 [FSM] Failure handling event BGP_Start in state Idle, prior events BGP_Stop, (null), fd -1, last reset: Admin. shutdown
+2025/11/23 23:50:26 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 2000::2
+2025/11/23 23:50:26 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 4000::1
+2025/11/23 23:52:42 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/23 23:52:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/23 23:52:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=111, pid=3966412890
+2025/11/23 23:52:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/23 23:52:43 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Initializing to Up, unspecified
+2025/11/23 23:53:07 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/23 23:53:07 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/23 23:53:18 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 2000::1 in vrf default
+2025/11/23 23:53:19 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 4:4:4::4 in vrf default
+2025/11/24 02:04:21 BGP: [H4B4J-DCW2R][EC 33554455] 3:3:3::3 [Error] bgp_read_packet error: Operation timed out
+2025/11/24 02:04:21 BGP: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffca9485a08 arg=0x7a3637123330 ready               (bgp_holdtime_timer)() &(connection->t_holdtime) from bgpd/bgp_fsm.c:398} getting executed 7026098ms late, warning threshold 4000ms. System load: 0.00, 0.00, 0.00
+2025/11/24 02:04:21 ISIS: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffd568660a8 arg=0x76fb40222320 ready               lsp_tick() &area->t_tick from isisd/isis_lsp.c:2160} getting executed 7052030ms late, warning threshold 4000ms. System load: 0.00, 0.00, 0.00
+2025/11/24 02:04:21 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Up to Down, holding time expired
+2025/11/24 02:04:21 ISIS: [TA8MV-N9T5B] no p2p neighbor on circuit eth2
+2025/11/24 02:04:21 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffc31126d98 arg=0x71c992c3f910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 7051990ms late, warning threshold 4000ms. System load: 26.11, 5.41, 1.75
+2025/11/24 02:04:21 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/24 02:04:21 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Initializing to Down, Neighbor restarted
+2025/11/24 02:04:21 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/24 02:04:21 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Initializing to Up, unspecified
+2025/11/24 02:04:22 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/24 02:04:22 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=152, pid=3966412890
+2025/11/24 02:04:22 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/24 02:04:21 LDP: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffe4c898fb8 arg=0x0 ready               lde_gc_timer() &gc_timer from ldpd/lde_lib.c:1053} getting executed 6836394ms late, warning threshold 4000ms. System load: 26.11, 5.41, 1.75
+2025/11/24 02:04:23 BGP: [H4B4J-DCW2R][EC 33554455] 2000::1 [Error] bgp_read_packet error: Connection reset by peer
+2025/11/24 02:04:24 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/24 02:04:24 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/24 06:25:08 BGP: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffca9485a08 arg=0x7a363685b330 ready               (bgp_connect_timer)() &(connection->t_connect) from bgpd/bgp_fsm.c:385} getting executed 15615988ms late, warning threshold 4000ms. System load: 0.00, 0.00, 0.00
+2025/11/24 06:25:09 LDP: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffe4c898fb8 arg=0x0 ready               lde_gc_timer() &gc_timer from ldpd/lde_lib.c:1053} getting executed 15347297ms late, warning threshold 4000ms. System load: 0.00, 0.00, 0.00
+2025/11/24 06:25:09 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffc31126d98 arg=0x71c992c3f910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 15642232ms late, warning threshold 4000ms. System load: 0.00, 0.00, 0.00
+2025/11/24 06:25:09 ISIS: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffd568660a8 arg=0x76fb40222320 ready               lsp_tick() &area->t_tick from isisd/isis_lsp.c:2160} getting executed 15642514ms late, warning threshold 4000ms. System load: 0.00, 0.00, 0.00
+2025/11/24 06:25:09 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Up to Down, holding time expired
+2025/11/24 06:25:09 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/24 06:25:09 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Initializing to Down, Neighbor restarted
+2025/11/24 06:25:09 ISIS: [TA8MV-N9T5B] no p2p neighbor on circuit eth2
+2025/11/24 06:25:09 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/24 06:25:09 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Initializing to Up, unspecified
+2025/11/24 06:25:10 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/24 06:25:10 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=166, pid=3966412890
+2025/11/24 06:25:10 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/24 06:25:15 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 2000::1 in vrf default
+2025/11/24 06:25:17 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 4:4:4::4 in vrf default
+2025/11/24 06:25:40 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/24 06:25:40 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/24 06:48:19 ISIS: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffd568660a8 arg=0x76fb40222320 ready               lsp_tick() &area->t_tick from isisd/isis_lsp.c:2160} getting executed 239619ms late, warning threshold 4000ms. System load: 1.99, 1.94, 1.76
+2025/11/24 06:48:19 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffc31126d98 arg=0x71c992c3f910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 240244ms late, warning threshold 4000ms. System load: 1.99, 1.94, 1.76
+2025/11/24 06:48:19 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Up to Down, holding time expired
+2025/11/24 06:48:19 LDP: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7ffe4c898fb8 arg=0x0 ready               lde_gc_timer() &gc_timer from ldpd/lde_lib.c:1053} getting executed 190598ms late, warning threshold 4000ms. System load: 1.99, 1.94, 1.76
+2025/11/24 06:48:19 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/24 06:48:19 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Initializing to Down, Neighbor restarted
+2025/11/24 06:48:19 ISI2025/11/24 06:58:56 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 06:58:56 OSPF: [G6NKK-8C6DV] end_config: VTY:0x79e695ccd060, pending SET-CFG: 0
+2025/11/24 06:58:56 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 06:58:56 LDP: [G6NKK-8C6DV] end_config: VTY:0x7bdef86a0610, pending SET-CFG: 0
+2025/11/24 06:58:56 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 06:58:56 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x73cd566ef650, pending SET-CFG: 0
+2025/11/24 06:58:56 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/24 06:58:56 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only isis routes vrf=0
+2025/11/24 06:58:56 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/24 06:58:56 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 06:58:56 PATH: [G6NKK-8C6DV] end_config: VTY:0x7e90c3b8c180, pending SET-CFG: 0
+2025/11/24 06:58:56 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 06:58:56 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x730e5b2af050, pending SET-CFG: 0
+2025/11/24 06:58:56 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 06:58:56 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7dedb82f31b0, pending SET-CFG: 0
+2025/11/24 06:58:56 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/24 06:58:56 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 06:58:56 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7c951bf150c0, pending SET-CFG: 0
+2025/11/24 06:58:56 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/24 06:58:56 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 06:58:56 BGP: [G6NKK-8C6DV] end_config: VTY:0x76b56603d0b0, pending SET-CFG: 0
+2025/11/24 06:58:57 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/24 06:58:57 ZEBRA: [V98V0-MTWPF] client 89 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/24 06:58:57 BGP: [J9K4Q-T8STY][EC 33554466] 2000::1 [FSM] Failure handling event BGP_Start in state Idle, prior events BGP_Stop, (null), fd -1, last reset: Admin. shutdown
+2025/11/24 06:58:59 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 3fff:172:20:20:42:acff:fe14:1406
+2025/11/24 07:00:44 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 07:00:44 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7427d7c6e730, pending SET-CFG: 0
+2025/11/24 07:00:44 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 07:00:44 LDP: [G6NKK-8C6DV] end_config: VTY:0x7790fd45a610, pending SET-CFG: 0
+2025/11/24 07:00:44 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 07:00:44 OSPF: [G6NKK-8C6DV] end_config: VTY:0x7a2e76aab070, pending SET-CFG: 0
+2025/11/24 07:00:44 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 07:00:44 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7cfcbf9100c0, pending SET-CFG: 0
+2025/11/24 07:00:44 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 07:00:44 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x71a466d3c050, pending SET-CFG: 0
+2025/11/24 07:00:44 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 07:00:44 PATH: [G6NKK-8C6DV] end_config: VTY:0x70ad6f1fa190, pending SET-CFG: 0
+2025/11/24 07:00:44 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/24 07:00:44 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only isis routes vrf=0
+2025/11/24 07:00:44 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/24 07:00:44 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/24 07:00:44 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 07:00:44 BGP: [G6NKK-8C6DV] end_config: VTY:0x70135f2ab0b0, pending SET-CFG: 0
+2025/11/24 07:00:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Strict mode for VRF is disabled
+2025/11/24 07:00:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Operation not permitted, type=RTM_NEWNEXTHOP(104), seq=49, pid=4182866660
+2025/11/24 07:00:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 07:00:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=50, pid=4182866660
+2025/11/24 07:00:44 ZEBRA: [X5XE1-RS0SW][EC 4043309074] Failed to install Nexthop (16[if 3 vrfid 0]) into the kernel
+2025/11/24 07:00:44 ZEBRA: [VYKYC-709DP] default(0:254):5:5:5:1::/128: Route install failed
+2025/11/24 07:00:44 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 07:00:44 ISIS: [G6NKK-8C6DV] end_config: VTY:0x76540b07b1b0, pending SET-CFG: 0
+2025/11/24 07:00:44 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/24 07:00:44 OSPF6: [GZ318-0J443] Zebra: got delete of eth3, but interface is still up
+2025/11/24 07:00:44 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/24 07:00:44 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/24 07:00:44 ZEBRA: [V98V0-MTWPF] client 89 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/24 07:00:44 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/24 07:00:45 BGP: [J9K4Q-T8STY][EC 33554466] 2000::1 [FSM] Failure handling event BGP_Start in state Idle, prior events BGP_Stop, (null), fd -1, last reset: Admin. shutdown
+2025/11/24 07:00:45 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 4000::1
+2025/11/24 07:27:17 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 2000::1 in vrf default
+2025/11/24 07:27:19 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 4:4:4::4 in vrf default
+2025/11/24 07:27:26 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/24 07:27:26 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/24 07:27:26 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=140, pid=4182866660
+2025/11/24 07:27:26 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/24 07:27:26 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Initializing to Up, unspecified
+2025/11/24 07:27:48 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/24 07:27:48 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/24 07:31:22 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 3:3:3::3
+2025/11/24 07:31:24 BGP: [MVZKX-EG443][EC 33554452] bgp_process_packet: BGP OPEN receipt failed for peer: 3:3:3::3
+2025/11/24 07:31:28 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 3:3:3::3 in vrf default
+2025/11/24 07:32:00 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 4:4:4::4 in vrf default
+2025/11/24 07:32:04 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 3:3:3::3 in vrf default
+2025/11/24 07:32:28 STATIC: [PNYPZ-BCP8Y] Static Route using eth3 interface not installed because the interface does not exist in specified vrf
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3:3:3::/128: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3:3:3:2::/128: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:4:4:4::/48: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:4:4:4::/128: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:4:4:4:2::/128: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3:3:3::/48: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:22:22:22:22::/128: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:1000::/64: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:11:11:11:11::/128: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:1001::/64: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3:3:3::3/128: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:3000::/64: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [SWQK6-6JY63][EC 4043309074] 0:254:4:4:4::4/128: Failed to enqueue dataplane install
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=256, pid=4182866660
+2025/11/24 08:01:12 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 21, bytesread -1, recvfrom(): Network is down
+2025/11/24 08:01:12 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 42, packet type 0
+2025/11/24 08:01:12 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=258, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=260, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=262, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=264, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=266, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=268, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=270, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=272, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=274, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=276, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=278, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=280, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=282, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=283, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=287, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=288, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=289, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=290, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=291, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=292, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [HSYZM-HV7HF] Extended Error: Nexthop id does not exist
+2025/11/24 08:01:12 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=293, pid=4182866660
+2025/11/24 08:01:12 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):3:3:3::/48: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):3:3:3::3/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):4:4:4::/48: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):4:4:4::4/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):3:3:3::/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):3:3:3:2::/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):4:4:4::/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):4:4:4:2::/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):11:11:11:11::/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):22:22:22:22::/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):1000::/64: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):1001::/64: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):2000::/64: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):3000::/64: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):2001::/64: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):6:6:6:2::/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):6:6:6::/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):5:5:5::/48: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):6:6:6::6/128: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):6:6:6::/48: Route install failed
+2025/11/24 08:01:12 ZEBRA: [VYKYC-709DP] default(0:254):5:5:5:2::/128: Route install failed
+2025/11/24 08:01:12 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to pe4 (eth2) for level-2 changed from Up to Down, circuit is being brought down
+2025/11/24 08:01:12 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: No such device or address
+2025/11/24 08:01:12 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (srv6): Send L2 IIH on eth2 failed
+2025/11/24 08:01:12 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/24 08:01:50 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 08:01:50 BGP: [G6NKK-8C6DV] end_config: VTY:0x73f01e09d0b0, pending SET-CFG: 0
+2025/11/24 08:01:50 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 08:01:50 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x742a78360050, pending SET-CFG: 0
+2025/11/24 08:01:50 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 08:01:50 LDP: [G6NKK-8C6DV] end_config: VTY:0x7ed6812f0610, pending SET-CFG: 0
+2025/11/24 08:01:50 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 08:01:50 OSPF: [G6NKK-8C6DV] end_config: VTY:0x76b91db65060, pending SET-CFG: 0
+2025/11/24 08:01:50 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 08:01:50 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7a55e219e1b0, pending SET-CFG: 0
+2025/11/24 08:01:50 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 08:01:50 STATIC: [G6NKK-8C6DV] end_config: VTY:0x75dfae9db0c0, pending SET-CFG: 0
+2025/11/24 08:01:50 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/24 08:01:50 PATH: [G6NKK-8C6DV] end_config: VTY:0x7a0e00672190, pending SET-CFG: 0
+2025/11/24 08:01:50 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/24 08:01:50 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/24 08:01:50 OSPF6: [GZ318-0J443] Zebra: got delete of eth3, but interface is still up
+2025/11/24 08:01:51 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/24 08:08:08 STATIC: [S4MGP-4WQTA] route_notify_owner: Route 200.0.0.0/32 failed to install for table: 20
+2025/11/24 08:08:09 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 5.5.5.5
+2025/11/24 08:08:09 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/24 08:08:09 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/24 08:08:09 ZEBRA: [V98V0-MTWPF] client 91 says hello and bids fair to announce only isis routes vrf=0
+2025/11/24 08:08:09 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/24 08:08:09 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/24 08:08:09 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/24 08:08:10 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 2000::2
+2025/11/24 08:08:10 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 4000::1
+2025/11/24 08:08:12 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 4:4:4::4 in vrf default
+2025/11/24 08:08:12 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 3:3:3::3 in vrf default
+2025/11/24 08:08:41 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/24 08:08:41 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/24 08:08:41 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=138, pid=2355684717
+2025/11/24 08:08:41 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/24 08:08:41 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Initializing to Up, unspecified
+2025/11/24 08:08:42 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 2000::1 in vrf default
+2025/11/24 08:09:12 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/24 08:09:12 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default
+2025/11/24 09:09:51 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/24 09:09:51 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=396, pid=2355684717
+2025/11/24 09:09:51 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/27 01:48:52 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/27 01:48:52 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x7f3b551ad050, pending SET-CFG: 0
+2025/11/27 01:48:52 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/27 01:48:52 OSPF: [G6NKK-8C6DV] end_config: VTY:0x7d687942e060, pending SET-CFG: 0
+2025/11/27 01:48:52 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/27 01:48:52 ISIS: [G6NKK-8C6DV] end_config: VTY:0x75d0760731b0, pending SET-CFG: 0
+2025/11/27 01:48:52 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/27 01:48:52 LDP: [G6NKK-8C6DV] end_config: VTY:0x7036444e4610, pending SET-CFG: 0
+2025/11/27 01:48:52 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/27 01:48:52 STATIC: [G6NKK-8C6DV] end_config: VTY:0x73adc5dbe0c0, pending SET-CFG: 0
+2025/11/27 01:48:52 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/27 01:48:52 PATH: [G6NKK-8C6DV] end_config: VTY:0x7afe168f0180, pending SET-CFG: 0
+2025/11/27 01:48:52 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/27 01:48:52 BGP: [G6NKK-8C6DV] end_config: VTY:0x7e58b783e0b0, pending SET-CFG: 0
+2025/11/27 01:48:52 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/27 01:48:52 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/29 09:38:33 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:38:33 OSPF: [G6NKK-8C6DV] end_config: VTY:0x73c7e63d1060, pending SET-CFG: 0
+2025/11/29 09:38:33 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:38:33 LDP: [G6NKK-8C6DV] end_config: VTY:0x76488e83b610, pending SET-CFG: 0
+2025/11/29 09:38:33 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:38:33 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x74b8d5f47050, pending SET-CFG: 0
+2025/11/29 09:38:33 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:38:33 ISIS: [G6NKK-8C6DV] end_config: VTY:0x70421ae401b0, pending SET-CFG: 0
+2025/11/29 09:38:33 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:38:33 BGP: [G6NKK-8C6DV] end_config: VTY:0x7b97e3b310b0, pending SET-CFG: 0
+2025/11/29 09:38:33 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:38:33 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7728076230c0, pending SET-CFG: 0
+2025/11/29 09:38:33 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:38:33 PATH: [G6NKK-8C6DV] end_config: VTY:0x7424c15b6180, pending SET-CFG: 0
+2025/11/29 09:38:33 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/29 09:38:33 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/29 09:39:40 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7fff9e9bd788 arg=0x745f985ce910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 6972ms late, warning threshold 4000ms. System load: 1.85, 0.86, 0.32
+2025/11/29 09:39:53 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7fff9e9bd788 arg=0x745f985ce910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 4239ms late, warning threshold 4000ms. System load: 1.56, 0.84, 0.32
+2025/11/29 09:40:14 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7fff9e9bd788 arg=0x745f985ce910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 4088ms late, warning threshold 4000ms. System load: 1.28, 0.81, 0.32
+2025/11/29 09:41:18 ZEBRA: [VQK5M-9G0V1][EC 100663315] CPU starvation: {(event *)0x7fff9e9bd788 arg=0x745f985ce910 ready               wheel_timer_thread() &wheel->timer from lib/wheel.c:50} getting executed 6203ms late, warning threshold 4000ms. System load: 0.98, 0.85, 0.37
+2025/11/29 09:42:48 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:42:48 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x73a0de3f5050, pending SET-CFG: 0
+2025/11/29 09:42:48 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:42:48 OSPF: [G6NKK-8C6DV] end_config: VTY:0x7f6fd23df070, pending SET-CFG: 0
+2025/11/29 09:42:48 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:42:48 BGP: [G6NKK-8C6DV] end_config: VTY:0x71c6f44450b0, pending SET-CFG: 0
+2025/11/29 09:42:48 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:42:48 LDP: [G6NKK-8C6DV] end_config: VTY:0x70f204149610, pending SET-CFG: 0
+2025/11/29 09:42:48 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:42:48 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7bd1d1ef41b0, pending SET-CFG: 0
+2025/11/29 09:42:48 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:42:48 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7e5c6d9f70c0, pending SET-CFG: 0
+2025/11/29 09:42:48 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:42:48 PATH: [G6NKK-8C6DV] end_config: VTY:0x7a8dc21bb190, pending SET-CFG: 0
+2025/11/29 09:42:49 OSPF6: [GZ318-0J443] Zebra: got delete of eth3, but interface is still up
+2025/11/29 09:42:49 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/29 09:42:49 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/29 09:42:49 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/29 09:45:34 OSPF: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:45:34 OSPF: [G6NKK-8C6DV] end_config: VTY:0x737242204070, pending SET-CFG: 0
+2025/11/29 09:45:34 LDP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:45:34 LDP: [G6NKK-8C6DV] end_config: VTY:0x7261c21b9610, pending SET-CFG: 0
+2025/11/29 09:45:34 OSPF6: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:45:34 OSPF6: [G6NKK-8C6DV] end_config: VTY:0x7699901a3050, pending SET-CFG: 0
+2025/11/29 09:45:34 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/29 09:45:34 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:45:34 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7e9c1b6260c0, pending SET-CFG: 0
+2025/11/29 09:45:34 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:45:34 PATH: [G6NKK-8C6DV] end_config: VTY:0x78ae9e30e190, pending SET-CFG: 0
+2025/11/29 09:45:34 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:45:34 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7893df0f01b0, pending SET-CFG: 0
+2025/11/29 09:45:34 ZEBRA: [V98V0-MTWPF] client 84 says hello and bids fair to announce only bgp routes vrf=0
+2025/11/29 09:45:34 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2025/11/29 09:45:34 BGP: [G6NKK-8C6DV] end_config: VTY:0x7df7532110b0, pending SET-CFG: 0
+2025/11/29 09:45:35 OSPF6: [GZ318-0J443] Zebra: got delete of lo20, but interface is still up
+2025/11/29 09:56:12 STATIC: [S4MGP-4WQTA] route_notify_owner: Route 200.0.0.0/32 failed to install for table: 20
+2025/11/29 09:56:12 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 5.5.5.5
+2025/11/29 09:56:12 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 5:5:5::5
+2025/11/29 09:56:12 ZEBRA: [YDG3W-JND95] FD Limit set: 1048576 is stupidly large.  Is this what you intended?  Consider using --limit-fds also limiting size to 100000
+2025/11/29 09:56:12 ZEBRA: [V98V0-MTWPF] client 91 says hello and bids fair to announce only isis routes vrf=0
+2025/11/29 09:56:12 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2025/11/29 09:56:12 BGP: [M95PE-ZW8F6] VRF default(0): bgp_zebra_process_srv6_locator_internal, Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/29 09:56:12 ISIS: [S89PV-K124N] isis_zebra_process_srv6_locator_internal: Received SRv6 locator loc01 5:5:5::/48, loc-block-len=24, loc-node-len=24 func-len=16, arg-len=0
+2025/11/29 09:56:14 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 2000::2
+2025/11/29 09:56:14 PATH: [NN4XW-E4M3V] IPv6 Router Id updated for VRF 0: 4000::1
+2025/11/29 09:56:16 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 3:3:3::3 in vrf default
+2025/11/29 09:56:16 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 4:4:4::4 in vrf default
+2025/11/29 09:56:33 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Unknown to Initializing, unspecified
+2025/11/29 09:56:33 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2025/11/29 09:56:33 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=123, pid=4109666466
+2025/11/29 09:56:33 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2025/11/29 09:56:33 ISIS: [Q7SVW-YVKRH] %ADJCHANGE: Adjacency to 0000.0000.0002 (eth2) for level-2 changed from Initializing to Up, unspecified
+2025/11/29 09:56:34 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 2000::1 in vrf default
+2025/11/29 09:57:04 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv4 VPN from 6:6:6::6 in vrf default
+2025/11/29 09:57:04 BGP: [M59KS-A3ZXZ] bgp_update_receive_eor: rcvd End-of-RIB for IPv6 Unicast from 6:6:6::6 in vrf default

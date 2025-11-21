@@ -1,0 +1,127 @@
+frr version 10.5.0_git
+frr defaults traditional
+hostname pe3
+log stdout informational
+log file /var/log/frr.log
+service integrated-vtysh-config
+!
+vrf red
+ ip route 200.0.0.0/32 4.0.0.1 eth3
+exit-vrf
+!
+vrf mgmt
+exit-vrf
+!
+interface eth1
+ description core2
+ ipv6 address 2000::2/64
+exit
+!
+interface eth2
+ description pe4_eth2
+ ipv6 address 4000::1/64
+ ipv6 router isis srv6
+ isis network point-to-point
+exit
+!
+interface eth3
+ description node2_eth1
+ ip address 4.0.0.0/31
+exit
+!
+interface lo
+ ip address 5.5.5.5/32
+exit
+!
+interface sr0
+ ipv6 address 5:5:5::5/128
+ ipv6 router isis srv6
+ isis passive
+exit
+!
+router bgp 65002
+ bgp router-id 5.5.5.5
+ no bgp ebgp-requires-policy
+ no bgp default ipv4-unicast
+ timers bgp 10 30
+ neighbor 3:3:3::3 remote-as 65001
+ neighbor 3:3:3::3 description pe1
+ neighbor 3:3:3::3 ebgp-multihop
+ neighbor 3:3:3::3 update-source sr0
+ neighbor 3:3:3::3 capability extended-nexthop
+ neighbor 4:4:4::4 remote-as 65001
+ neighbor 4:4:4::4 description pe2
+ neighbor 4:4:4::4 ebgp-multihop
+ neighbor 4:4:4::4 update-source sr0
+ neighbor 4:4:4::4 capability extended-nexthop
+ neighbor 6:6:6::6 remote-as 65002
+ neighbor 6:6:6::6 description pe4
+ neighbor 6:6:6::6 update-source sr0
+ neighbor 6:6:6::6 capability extended-nexthop
+ neighbor 2000::1 remote-as 64512
+ neighbor 2000::1 description core2
+ !
+ segment-routing srv6
+  locator loc01
+ exit
+ !
+ address-family ipv4 vpn
+  neighbor 3:3:3::3 activate
+  neighbor 4:4:4::4 activate
+  neighbor 6:6:6::6 activate
+ exit-address-family
+ !
+ address-family ipv6 unicast
+  redistribute connected
+  redistribute isis
+  neighbor 6:6:6::6 activate
+  neighbor 2000::1 activate
+ exit-address-family
+exit
+!
+router bgp 65002 vrf red
+ bgp log-neighbor-changes
+ no bgp ebgp-requires-policy
+ no bgp default ipv4-unicast
+ !
+ address-family ipv4 unicast
+  redistribute connected
+  redistribute static
+  sid vpn export auto
+  rd vpn export 65002:20
+  nexthop vpn export 5:5:5::
+  rt vpn both 65000:20
+  export vpn
+  import vpn
+ exit-address-family
+exit
+!
+router isis srv6
+ is-type level-2-only
+ net 49.0001.0000.0000.0001.00
+ lsp-mtu 1300
+ topology ipv6-unicast
+ log-adjacency-changes
+ log-pdu-drops
+ segment-routing on
+ segment-routing node-msd 8
+ segment-routing srv6
+  locator loc01
+ exit
+exit
+!
+segment-routing
+ srv6
+  locators
+   locator loc01
+    prefix 5:5:5::/48
+   exit
+   !
+  exit
+  !
+ exit
+ !
+ traffic-eng
+ exit
+exit
+!

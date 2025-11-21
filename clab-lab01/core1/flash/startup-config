@@ -1,0 +1,127 @@
+! Startup-config last modified at Sat Nov 29 09:46:18 2025 by root
+! device: core1 (cEOSLab, EOS-4.35.0F-44178984.4350F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$06s7IVESGVlYMqcW$J2yvdkfibMK5CFhC0Q1Do7DBQeu5.ONDkou5oBGbnyZDcx3RszJy2RA5r4mfVAfemC8vw.z.qDTVcq2ywc/b10
+!
+management api http-commands
+   no shutdown
+!
+no service interface inactive port-id allocation disabled
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname core1
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+vrf instance blue
+!
+vrf instance mgmt
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+interface Ethernet1
+   description core2_eth1
+   shutdown
+   no switchport
+   ip address 1.0.0.0/31
+   isis enable core
+   isis network point-to-point
+!
+interface Ethernet2
+   description pe1_eth1
+   shutdown
+   no switchport
+   vrf blue
+   ipv6 address 1000::1/64
+!
+interface Ethernet3
+   description pe2_eth1
+   shutdown
+   no switchport
+   vrf blue
+   ipv6 address 1001::1/64
+!
+interface Loopback0
+   ip address 1.1.1.1/32
+   node-segment ipv4 index 10
+   isis enable core
+!
+interface Loopback10
+   vrf blue
+   ip address 11.11.11.11/32
+   ipv6 address 11:11:11:11::/128
+!
+interface Management0
+   ip address 172.20.20.2/24
+   ipv6 address 3fff:172:20:20::2/64
+!
+ip routing
+ip routing vrf blue
+no ip routing vrf mgmt
+!
+ipv6 unicast-routing
+ipv6 unicast-routing vrf blue
+!
+mpls ip
+!
+router bgp 64512
+   router-id 1.1.1.1
+   no bgp default ipv4-unicast
+   neighbor core peer group
+   neighbor core remote-as 64512
+   neighbor core update-source Loopback0
+   neighbor core send-community extended
+   neighbor 2.2.2.2 peer group core
+   neighbor 2.2.2.2 description core2
+   !
+   address-family evpn
+      neighbor default encapsulation mpls next-hop-self source-interface Loopback0
+      neighbor core activate
+   !
+   vrf blue
+      rd 64512:10
+      router-id 11.11.11.11
+      neighbor 1000::2 remote-as 65001
+      neighbor 1000::2 description pe1
+      neighbor 1001::2 remote-as 65001
+      neighbor 1001::2 description pe2
+      !
+      address-family ipv6
+         route-target import evpn 64512:10
+         route-target export evpn 64512:10
+         neighbor 1000::2 activate
+         neighbor 1001::2 activate
+         redistribute connected
+!
+router isis core
+   net 49.0001.0000.0000.0001.00
+   is-type level-2
+   advertise passive-only
+   !
+   address-family ipv4 unicast
+   !
+   segment-routing mpls
+      router-id 1.1.1.1
+      no shutdown
+!
+router multicast
+   ipv4
+      software-forwarding kernel
+   !
+   ipv6
+      software-forwarding kernel
+!
+end

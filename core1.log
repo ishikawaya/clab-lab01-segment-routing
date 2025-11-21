@@ -1,0 +1,553 @@
+core1>i[7G[Ken
+
+ter len 0
+
+show ip route vrf blue
+core1#
+core1#ter len 0
+
+show isis database detail
+
+show isis segment-routing adjacency-segments
+Pagination disabled.
+core1#
+core1#show ip route vrf blue
+
+show isis segment-routing global-blocks
+
+show isis segment-routing prefix-segments
+
+VRF: blue
+Source Codes:
+       C - connected, S - static, K - kernel,
+       O - OSPF, O IA - OSPF inter area, O E1 - OSPF external type 1,
+       O E2 - OSPF external type 2, O N1 - OSPF NSSA external type 1,
+       O N2 - OSPF NSSA external type2, O3 - OSPFv3,
+       O3 IA - OSPFv3 inter area, O3 E1 - OSPFv3 external type 1,
+       O3 E2 - OSPFv3 external type 2,
+       O3 N1 - OSPFv3 NSSA external type 1,
+       O3 N2 - OSPFv3 NSSA external type2, B - Other BGP Routes,
+       B I - iBGP, B E - eBGP, R - RIP, I L1 - IS-IS level 1,
+       I L2 - IS-IS level 2, A B - BGP Aggregate,
+       A O - OSPF Summary, NG - Nexthop Group Static Route,
+       V - VXLAN Control Service, M - Martian,
+       DH - DHCP client installed default route,
+       DP - Dynamic Policy Route, L - VRF Leaked,
+       G  - gRIBI, RC - Route Cache Route,
+       CL - CBF Leaked Route
+
+Gateway of last resort is not set
+
+ C        11.11.11.11/32
+           directly connected, Loopback10
+
+core1#
+core1#show isis database detail
+
+show isis segment-routing tunnel
+
+show bgp summary vrf all
+
+Legend:
+H - hostname conflict
+U - node unreachable
+
+IS-IS Instance: core VRF: default
+  IS-IS Level 2 Link State Database
+    LSPID                   Seq Num  Cksum  Life Length IS  Received LSPID        Flags
+show bgp neighbors
+    core1.00-00                  13  29749   615    142 L2  0000.0000.0001.00-00  <>
+      LSP generation remaining wait time: 0 ms
+      Time remaining until refresh: 315 s
+      NLPID: 0xCC(IPv4)
+      Hostname: core1
+      Area addresses: 49.0001
+      Interface address: 1.0.0.0
+      Interface address: 1.1.1.1
+      IS Neighbor          : core2.00            Metric: 10
+        IPv4 Neighbor Address: 1.0.0.1
+        IPv4 Interface Address: 1.0.0.0
+        Adj-sid: 132768 flags: [L V] weight: 0x0
+      Reachability         : 1.1.1.1/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 10 Flags: [N] Algorithm: 0
+      Router Capabilities: Router Id: 1.1.1.1 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  6
+        SR Capability: Flags: [I]
+          SRGB Base: 900000 Range: 65536
+    core2.00-00                  14  45534   503    142 L2  0000.0000.0002.00-00  <>
+      LSP received time: 2025-11-24 08:55:46
+      Remaining lifetime received: 1199 s Modified to: 1200 s
+      NLPID: 0xCC(IPv4)
+      Hostname: core2
+      Area addresses: 49.0001
+      Interface address: 1.0.0.1
+      Interface address: 2.2.2.2
+      IS Neighbor          : core1.00            Metric: 10
+        IPv4 Neighbor Address: 1.0.0.0
+        IPv4 Interface Address: 1.0.0.1
+        Adj-sid: 132768 flags: [L V] weight: 0x0
+      Reachability         : 2.2.2.2/32 Metric: 10 Type: 1 Up
+        SR Prefix-SID: 20 Flags: [N] Algorithm: 0
+      Router Capabilities: Router Id: 2.2.2.2 Flags: []
+        SR Local Block:
+          SRLB Base: 965536 Range: 65536
+        Area leader priority: 250 algorithm: 0
+        Maximum SID depth:
+          Base MPLS imposition (MSD type 1):  6
+        SR Capability: Flags: [I]
+          SRGB Base: 900000 Range: 65536
+
+core1#
+core1#show isis segment-routing adjacency-segments
+
+show bgp evpn detail
+
+exit
+
+c - conflicting SR capability TLV, processed first advertisement
+System ID: core1			Instance: core
+SR supported Data-plane: MPLS			SR Router ID: 1.1.1.1
+Adj-SID allocation mode: SR-adjacencies
+Adj-SID allocation pool: Base: 132768     Size: 16384
+Adjacency Segment Count: 1
+Flag Descriptions: F: IPv6 address family, B: Backup, V: Value
+                   L: Local, S: Set
+
+Segment Status codes: L1 - Level-1 adjacency, L2 - Level-2 adjacency, P2P - Point-to-Point adjacency, LAN - Broadcast adjacency
+                      ! - SR-unreachable, # - Some IS-IS next-hops are SR-unreachable
+
+Locally Originated Adjacency Segments
+Adj IP Address  Local Intf     SID   SID Source                 Flags     Type 
+--------------- ----------- ------- ------------ --------------------- --------
+       1.0.0.1         Et1  132768      Dynamic   F:0 B:0 V:1 L:1 S:0   P2P L2 
+
+ Protection
+-----------
+unprotected
+
+core1#
+core1#show isis segment-routing global-blocks
+
+c - conflicting SR capability TLV, processed first advertisement
+System ID: core1			Instance: core
+SR supported Data-plane: MPLS			SR Router ID: 1.1.1.1
+SR Global Block( SRGB ) Size: 65536           
+
+Number of IS-IS segment routing capable nodes excluding self: 1
+
+           SystemId         Base     Size
+------- -------------- ------------ -----
+   *          core1       900000    65536
+              core2       900000    65536
+
+core1#
+core1#show isis segment-routing prefix-segments
+
+System ID: core1			Instance: 'core'
+SR supported Data-plane: MPLS			SR Router ID: 1.1.1.1
+
+Node: 2      Proxy-Node: 0      Prefix: 0       Total Segments: 2
+
+Flag Descriptions: R: Re-advertised, N: Node Segment, P: no-PHP
+                   E: Explicit-NULL, V: Value, L: Local, A: Proxy-Node attached
+Segment status codes: * - Self originated Prefix, L1 - level 1, L2 - level 2, ! - SR-unreachable,
+                      # - Some IS-IS next-hops are SR-unreachable
+   Prefix                      SID   Label Type       Flags                        System ID       Level Protection  Algorithm   
+   ------------------------- ----- ------- ---------- ---------------------------- --------------- ----- ----------- -------------
+*  1.1.1.1/32                   10  900010 Node       R:0 N:1 P:0 E:0 V:0 L:0      core1           L2    unprotected SPF         
+   2.2.2.2/32                   20  900020 Node       R:0 N:1 P:0 E:0 V:0 L:0      core2           L2    unprotected SPF         
+core1#
+core1#show isis segment-routing tunnel
+   Index       Endpoint         Next Hop/Tunnel Index       Interface    Labels
+----------- ---------------- --------------------------- --------------- ------
+   1           2.2.2.2/32       1.0.0.1                     Ethernet1    [ 3 ] 
+
+core1#
+core1#show bgp summary vrf all
+BGP summary information for VRF default
+Router identifier 1.1.1.1, local AS number 64512
+Neighbor          AS Session State AFI/SAFI                AFI/SAFI State   NLRI Rcd   NLRI Acc   NLRI Adv
+-------- ----------- ------------- ----------------------- -------------- ---------- ---------- ----------
+2.2.2.2        64512 Established   L2VPN EVPN              Negotiated             12         12         12
+
+BGP summary information for VRF blue
+Router identifier 11.11.11.11, local AS number 64512
+Neighbor          AS Session State AFI/SAFI                AFI/SAFI State   NLRI Rcd   NLRI Acc   NLRI Adv
+-------- ----------- ------------- ----------------------- -------------- ---------- ---------- ----------
+1000::2        65001 Established   IPv6 Unicast            Negotiated             11         11         17
+1001::2        65001 Established   IPv6 Unicast            Negotiated             11         11         22
+core1#
+core1#show bgp neighbors
+BGP neighbor is 2.2.2.2, remote AS 64512, internal link
+ Description: core2
+  BGP version 4, remote router ID 2.2.2.2, VRF default
+  Inherits configuration from and member of peer-group core
+  Last read 00:00:50, last write 00:00:13
+  Hold time is 180, keepalive interval is 60 seconds
+  Configured hold time is 180, keepalive interval is 60 seconds
+  Effective minimum hold time is 3 seconds
+  Send failure hold time is 0 seconds
+  Hold timer is active, time left: 00:02:10
+  Keepalive timer is active, time left: 00:00:29
+  Connect timer is inactive
+  Idle-restart timer is inactive
+  BGP state is Established, up for 00:56:48
+  Number of transitions to established: 3
+  Last state was OpenConfirm
+  Last event was RecvUpdate
+  Last sent notification:Cease/administrative reset, Last time 00:56:55
+  Last rcvd notification:Cease/administrative reset, Last time 00:56:50
+  Last sent socket-error:Connect (Network is unreachable), Last time 01:04:30, First time 01:04:35, Repeats 1
+  Types of communities advertised: extended
+  Enhanced route refresh stale path removal disabled
+  Outbound enhanced route refresh enabled
+  Neighbor Capabilities:
+    Multiprotocol L2VPN EVPN: advertised and received and negotiated
+    Four Octet ASN: advertised and received and negotiated
+    Route Refresh: advertised and received and negotiated
+    Enhanced route refresh: advertised and received and negotiated
+    Send End-of-RIB messages: advertised and received and negotiated
+    Additional-paths recv capability:
+      L2VPN EVPN: advertised
+    Additional-paths send capability:
+      L2VPN EVPN: received
+    Graceful Restart advertised:
+      Restart-time is 300
+      Restart-State bit: no
+      Graceful notification: yes
+    Graceful Restart received:
+      Restart-time is 300
+      Restart-State bit: yes
+      Graceful notification: yes
+  Restart timer is inactive
+  End of rib timer is inactive
+    L2VPN EVPN End-of-RIB received: Yes
+      Received 00:56:48
+      Number of stale paths removed after graceful restart: 0
+      Number of paths received before End-of-RIB: 12
+  IPv4 Unicast AS_SET/AS_CONFED_SET processing: accept
+  IPv6 Unicast AS_SET/AS_CONFED_SET processing: accept
+  AIGP attribute send and receive for IPv4 Unicast are enabled
+  AIGP attribute send and receive for IPv4 with MPLS Labels are enabled
+  AIGP attribute send and receive for IPv6 Unicast are enabled
+  AIGP attribute send and receive for IPv6 with MPLS Labels are enabled
+  BGP session driven failover for IPv4 Unicast is disabled
+  BGP session driven failover for IPv6 Unicast is disabled
+  Message Statistics:
+                                  Sent      Rcvd
+    Opens:                           4         3
+    Notifications:                   2         1
+    Updates:                        16        16
+    Keepalives:                     80        79
+    Enhanced Route Refresh:          0         0
+    Begin of Route Refresh:          0         0
+    End of Route Refresh:            0         0
+    Total messages:                102        99
+  Prefix Statistics:
+                                   Sent      Rcvd     Best Paths     Best ECMP Paths
+    IPv4 Unicast:                     0         0              0                   0
+    IPv6 Unicast:                     0         0              0                   0
+    EVPN:                            12        12             12                   0
+  Configured maximum total number of routes is 256000, warning limit is 204800
+  Inbound updates dropped by reason:
+    AS path loop detection: 0
+    Cluster ID loop detection: 0
+    Enforced First AS: 0
+    Malformed MPBGP routes: 0
+    Originator ID matches local router ID: 0
+    Nexthop matches local IP address: 0
+    Unexpected IPv6 nexthop for IPv4 routes: 0
+    AS_SET/AS_CONFED_SET in AS_PATH for IPv4 Unicast: 0
+    AS_SET/AS_CONFED_SET in AS_PATH for IPv6 Unicast: 0
+  Inbound updates with attribute errors:
+    Resulting in removal of all paths in update (treat as withdraw): 0
+    Resulting in AFI/SAFI disable: 0
+    Resulting in attribute ignore: 0
+    Disabled AFI/SAFIs: None
+  Inbound paths dropped by reason:
+    IPv4 unicast NLRIs dropped due to martian prefix: 0
+    IPv6 unicast NLRIs dropped due to martian prefix: 0
+    IPv4 labeled-unicast NLRIs dropped due to excessive labels: 0
+    IPv4 labeled-unicast NLRIs dropped due to martian prefix: 0
+    IPv6 labeled-unicast NLRIs dropped due to excessive labels: 0
+    IPv6 labeled-unicast NLRIs dropped due to martian prefix: 0
+    VPN-IPv4 NLRIs dropped due to route import match failure: 0
+    VPN-IPv6 NLRIs dropped due to route import match failure: 0
+    L2VPN EVPN NLRIs dropped due to route import match failure: 0
+    L2VPN EVPN NLRIs dropped due to unsupported route type: 0
+    L2VPN EVPN NLRIs dropped due to maximum route limit violation: 0
+    Link-state NLRIs dropped because reception is unsupported: 0
+    RT Membership NLRIs dropped due to local origin ASN received from external peer: 0
+  Outbound paths dropped by reason:
+    IPv4 local address not available: 0
+    IPv6 local address not available: 0
+Local AS is 64512, local router ID 1.1.1.1
+TTL is 255
+Local TCP address is 1.1.1.1, local port is 39827
+Remote TCP address is 2.2.2.2, remote port is 179
+Local next hop for next hop self:
+  L2VPN EVPN: 1.1.1.1
+TCP Socket Information:
+  TCP state is ESTABLISHED
+  Recv-Q: 0/32768
+  Send-Q: 0/87040
+  Outgoing Maximum Segment Size (MSS): 1448
+  Total Number of TCP retransmissions: 0
+  Options:
+    Timestamps enabled: yes
+    Selective Acknowledgments enabled: yes
+    Window Scale enabled: yes
+    Explicit Congestion Notification (ECN) enabled: no
+  Socket Statistics:
+    Window Scale (wscale): 7,7
+    Retransmission Timeout (rto): 201.0ms
+    Round-trip Time (rtt/rtvar): 0.1ms/0.0ms
+    Delayed Ack Timeout (ato): 40.0ms
+    Congestion Window (cwnd): 10
+    TCP Throughput: 851.76 Mbps
+    Recv Round-trip Time (rcv_rtt): 1.0ms
+    Advertised Recv Window (rcv_space): 14480
+
+core1#
+core1#show bgp evpn detail
+BGP routing table information for VRF default
+Router identifier 1.1.1.1, local AS number 64512
+BGP routing table entry for ip-prefix 3:3:3::/48, Route Distinguisher: 64512:10
+ Paths: 2 available
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, external, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 10, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 3:3:3::/128, Route Distinguisher: 64512:10
+ Paths: 2 available
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, external, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 3:3:3::3/128, Route Distinguisher: 64512:10
+ Paths: 2 available
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 20, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 3:3:3:2::/128, Route Distinguisher: 64512:10
+ Paths: 2 available
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, external, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 4:4:4::/48, Route Distinguisher: 64512:10
+ Paths: 2 available
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, external, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 10, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 4:4:4::/128, Route Distinguisher: 64512:10
+ Paths: 2 available
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, external, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 4:4:4::4/128, Route Distinguisher: 64512:10
+ Paths: 2 available
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 20, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 4:4:4:2::/128, Route Distinguisher: 64512:10
+ Paths: 2 available
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, external, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 5:5:5::/48, Route Distinguisher: 64512:10
+ Paths: 1 available
+  65002
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 5:5:5::/128, Route Distinguisher: 64512:10
+ Paths: 1 available
+  65002
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 5:5:5::5/128, Route Distinguisher: 64512:10
+ Paths: 1 available
+  65002
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 5:5:5:2::/128, Route Distinguisher: 64512:10
+ Paths: 1 available
+  65002
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 6:6:6::/48, Route Distinguisher: 64512:10
+ Paths: 1 available
+  65002
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 6:6:6::/128, Route Distinguisher: 64512:10
+ Paths: 1 available
+  65002
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 6:6:6::6/128, Route Distinguisher: 64512:10
+ Paths: 1 available
+  65002
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 6:6:6:2::/128, Route Distinguisher: 64512:10
+ Paths: 1 available
+  65002
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 11:11:11:11::/128, Route Distinguisher: 64512:10
+ Paths: 1 available
+  Local
+    - from - (0.0.0.0)
+      Origin IGP, metric -, localpref -, weight 0, tag 0, valid, local, best, redistributed (Connected)
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 22:22:22:22::/128, Route Distinguisher: 64512:10
+ Paths: 1 available
+  Local
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin IGP, metric -, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 1000::/64, Route Distinguisher: 64512:10
+ Paths: 3 available
+  Local
+    - from - (0.0.0.0)
+      Origin IGP, metric -, localpref -, weight 0, tag 0, valid, local, best, redistributed (Connected)
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 1001::/64, Route Distinguisher: 64512:10
+ Paths: 3 available
+  Local
+    - from - (0.0.0.0)
+      Origin IGP, metric -, localpref -, weight 0, tag 0, valid, local, best, redistributed (Connected)
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric -, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 2000::/64, Route Distinguisher: 64512:10
+ Paths: 1 available
+  Local
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin IGP, metric -, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 2001::/64, Route Distinguisher: 64512:10
+ Paths: 1 available
+  Local
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin IGP, metric -, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 3000::/64, Route Distinguisher: 64512:10
+ Paths: 2 available
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+  65001
+    - from - (0.0.0.0)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, external
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+BGP routing table entry for ip-prefix 4000::/64, Route Distinguisher: 64512:10
+ Paths: 1 available
+  65002
+    2.2.2.2 from 2.2.2.2 (2.2.2.2)
+      Origin INCOMPLETE, metric 0, localpref 100, weight 0, tag 0, valid, internal, best
+      Extended Community: Route-Target-AS:64512:10 TunnelEncap:tunnelTypeMpls
+      MPLS label: 100000
+core1#
+core1#exit
